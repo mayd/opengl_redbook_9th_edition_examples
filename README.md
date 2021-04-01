@@ -45,10 +45,10 @@ Minimal changes to enable the code to build and run on Microsoft Windows 10 unde
 
 Run the following comands:
 
-  `cd build`
-  `cmake .. -G "MinGW Makefiles"`
-  `cd ..`
-  `MAKEFLAGS=-k cmake --build build --target`
+    cd build
+    cmake .. -G "MinGW Makefiles"
+    cd ..
+    MAKEFLAGS=-k cmake --build build --target
 
 NB All examples should build but a few do not run corroectly.
 
