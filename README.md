@@ -35,3 +35,20 @@ OpenGL 4.5 support will fail. For example, if a platform were limited to, say Op
 then the samples wouldn't work on that platform. Please don't file bugs about that either.
 Error checking in these applications is minimal. If you don't have media files or if
 your OpenGL drivers are out of date, they'll probably fail spectacularly.
+
+
+## Changes to my fork of the repository
+
+1 April 2021
+
+Minimal changes to enable the code to build and run on Microsoft Windows 10 under MSYS2/MINGW
+
+Run the following comands:
+
+  `cd build`
+  `cmake .. -G "MinGW Makefiles"`
+  `cd ..`
+  `MAKEFLAGS=-k cmake --build build --target`
+
+NB All examples should build but a few do not run corroectly.
+
